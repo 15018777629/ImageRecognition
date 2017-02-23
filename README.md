@@ -6,9 +6,17 @@
 这里可能比较大图，为了防止内存异常和识别速率，会将大图压缩到一定比例后在进行比较。
 其他更多详细的说明在项目的Library里有很详细的注释，有兴趣的用户可以参考一下。
 声明一下，该项目不做任何依据，都是个人的见解，如果你有更好的思路或代码可以共同讨论。
+
+# 先贴出几张效果图
+![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image1.png)
+![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image2.png)
+![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image3.png)
+![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image4.png)
+
 # 怎么使用
 使用起来十分的简洁，只需要短短的几行代码，demo里面虽然有很多乱七八糟的代码，
 但是阵阵核心的只有几句，如下:
+
 ```java
 SimilarityHelper similarityHelper = SimilarityHelper.instance(); 
 similarityHelper.similarity(testImage1, testImage2, new SimilarityCallBack() {
@@ -23,9 +31,3 @@ similarityHelper.similarity(testImage1, testImage2, new SimilarityCallBack() {
                     }
                 },getApplicationContext());
                 
-```java
-# 最后贴出几张效果图
-![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image1.png)
-![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image2.png)
-![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image3.png)
-![Screenshot](https://github.com/15018777629/ImageRecognition/blob/master/screenshot/image4.png)
