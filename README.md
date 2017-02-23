@@ -19,7 +19,7 @@
 
 ```java
 SimilarityHelper similarityHelper = SimilarityHelper.instance(); 
-similarityHelper.similarity(testImage1, testImage2, new SimilarityCallBack() {
+similarityHelper.similarity(res1, res2, new SimilarityCallBack() {
                     @Override
                     public void onSimilarityStart() {
                     }
@@ -31,3 +31,18 @@ similarityHelper.similarity(testImage1, testImage2, new SimilarityCallBack() {
                     }
                 },getApplicationContext());
                 
+ 或者是这样:
+ 
+ similarityHelper.similarity(bitmap1,bitmap2,new SimilarityCallBack() {
+                    @Override
+                    public void onSimilarityStart() {
+                    }
+                    @Override
+                    public void onSimilaritySuccess(int similarity, int different) {
+                    }
+                    @Override
+                    public void onSimilarityError(String reason) {
+                    }
+                });
+ 
+                
